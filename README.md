@@ -1,5 +1,5 @@
 # Algorithms
-Algorithms
+Learning to advance my skills in programming though algorithms
 
 ## Fibonacci
 ![](https://cdn-images-1.medium.com/max/2000/1*2laBY0J-h42yqCBm9FQmIQ.jpeg)
