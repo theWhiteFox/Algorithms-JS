@@ -18,3 +18,12 @@ function fibonacci() {
 }
 
 document.getElementById("fibWhile").innerHTML = fibonacci();
+
+function fibonacci2() {
+    var first2 = 0, second2 = 1, temp;
+
+    while(temp < 100) {
+        temp = first2 + second2;
+        console.log(temp);
+    }
+}
