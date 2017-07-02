@@ -14,7 +14,6 @@ Fibonacci functions created using
 
 [c fibonacci-problem-using-while-loop](https://cboard.cprogramming.com/c-programming/57359-fibonacci-problem-using-while-loop.html)
 
-
-
 [rawgit](https://rawgit.com/)
+
 [about gists](https://help.github.com/articles/about-gists/)

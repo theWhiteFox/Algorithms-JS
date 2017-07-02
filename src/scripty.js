@@ -5,27 +5,6 @@
 
 "use strict";
 
-// fibonacci html output
-function fibonacciHTML() {
-    var result = 0, term1 = 0, term2 = 1, i = 1;
-
-    var text = term1 + '<br>' + term2;
-
-    while(i < 10) {
-        result = term1 + term2;
-        text += "<br>" + result;
-        term1 = term2;
-        term2 = result;
-        i++;
-    }
-    return text;
-}
-
-// error in console document.getElementById(...) is null
-window.onload = function() {
-    document.getElementById("fibWhile").innerHTML = fibonacciHTML();
-}
-
 // below functions can be accessed from the console
 // very basic fibonacci
 function basicFib() {
