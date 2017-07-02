@@ -6,7 +6,9 @@ Fibonacci functions created using
 - 
 
 ## Fibonacci
-![](https://cdn-images-1.medium.com/max/2000/1*2laBY0J-h42yqCBm9FQmIQ.jpeg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
+
+[wiki Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
 
 [Fibonacci sequence algorithm in Javascript](https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e)
 
