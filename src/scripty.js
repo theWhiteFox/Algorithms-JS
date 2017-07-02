@@ -21,7 +21,7 @@ function fibonacciHTML() {
 
 // error in console document.getElementById(...) is null
 window.onload = function() {
-    document.getElementById("fibWhile").innerHTML = basicFib();
+    document.getElementById("fibWhile").innerHTML = fibonacciHTML();
 }
 
 // very basic fibonacci
