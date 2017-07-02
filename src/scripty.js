@@ -81,7 +81,7 @@ function fib(number) {
 
 }
 
-// shorter recursive starts a 1
+// shorter recursive starts at 1
 function fibRecursive(n) {
     if(n <= 1) return 1;
 
