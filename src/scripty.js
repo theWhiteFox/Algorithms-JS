@@ -49,7 +49,7 @@ function fibFor() {
     }
 }
 
-// recursive starts at 0
+// recursive function starts at 0
 function fib(number) {
 
     if(number == 0) return 0;
@@ -60,7 +60,7 @@ function fib(number) {
 
 }
 
-// shorter recursive starts at 1
+// shorter recursive function starts at 1
 function fibRecursive(n) {
     if(n <= 1) return 1;
 
