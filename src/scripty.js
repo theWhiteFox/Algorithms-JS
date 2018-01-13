@@ -35,7 +35,6 @@ function fibonacci(num) {
     return b;
 }
 
-
 // for loop
 function fibFor() {
     var a = 0, b = 1, i = 1, result;
