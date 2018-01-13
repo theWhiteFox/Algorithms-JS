@@ -5,6 +5,10 @@
 
 "use strict";
 
+/* 
+* Fibonacci 
+*/
+
 // below functions can be accessed from the console
 // very basic fibonacci
 function basicFib() {
@@ -65,3 +69,17 @@ function fibRecursive(n) {
 
     return fibRecursive(n - 2) + fibRecursive(n - 1);
 }
+
+/* 
+* fizzBuzz 
+*/
+
+// modulus operator
+
+console.log("modulus operator: 7 % 3 = " + 7 % 3);
+
+function fizzBuzz(num) {
+
+}
+
+fizzBuzz(20);
