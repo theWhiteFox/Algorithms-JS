@@ -21,6 +21,10 @@ fizzBuzz
 
 [FizzBuzz Test](http://wiki.c2.com/?FizzBuzzTest)
 
+## Dijkstra
+
+![](https://cdn-images-1.medium.com/max/800/1*lzYuC6dIVTVl0gt3MOuCyw.jpeg)
+
 ## Resources
 
 [rawgit](https://rawgit.com/)
