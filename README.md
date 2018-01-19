@@ -24,6 +24,7 @@ fizzBuzz
 ## Dijkstra
 
 ![](https://cdn-images-1.medium.com/max/800/1*lzYuC6dIVTVl0gt3MOuCyw.jpeg)
+[hackernoon how to implement dijkstras algorithm JS](https://hackernoon.com/how-to-implement-dijkstras-algorithm-in-javascript-abdfd1702d04)
 
 ## Resources
 
