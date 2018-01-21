@@ -5,8 +5,14 @@ Fibonacci functions created using
 - while loops
 - recursion
 
-fizzBuzz
+FizzBuzz
 - modulus operator
+- [FizzBuzz Test](http://wiki.c2.com/?FizzBuzzTest)
+
+Dijkstra
+- Objects
+- Array
+- function
 
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
@@ -17,9 +23,9 @@ fizzBuzz
 
 [c fibonacci-problem-using-while-loop](https://cboard.cprogramming.com/c-programming/57359-fibonacci-problem-using-while-loop.html)
 
-## fizzBuzz
+## FizzBuzz
 
-[FizzBuzz Test](http://wiki.c2.com/?FizzBuzzTest)
+![](http://agilekatas.co.uk/static/img/katas/kata_fizzbuzz.png)
 
 ## Dijkstra
 
