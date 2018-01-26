@@ -14,6 +14,8 @@ Dijkstra
 - Array
 - function
 
+- Randsome note problem
+
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
 
