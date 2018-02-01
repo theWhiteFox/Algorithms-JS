@@ -95,8 +95,8 @@ fizzBuzz(20);
 */
 
 const graph = {
-  start: { A:5, B: 3 },
-  A: { C: 2, D: 4},
+  start: { A:5, B: 2 },
+  A: { C: 4, D: 2},
   B: { D: 8, D: 7},
   C: { D: 6, finish: 3},
   D: { finish: 1 },
