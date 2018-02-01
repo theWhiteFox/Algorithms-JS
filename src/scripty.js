@@ -100,7 +100,7 @@ const graph = {
   B: { },
   C: { },
   D: { },
-  finish: { }
+  finish: { finish: 1}
 };
 
 
