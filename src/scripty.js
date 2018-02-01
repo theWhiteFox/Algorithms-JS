@@ -98,7 +98,7 @@ const graph = {
   start: { },
   A: { },
   B: { },
-  C: { },
+  C: { D: 6, finish: 3},
   D: { finish: 1 },
   finish: { }
 };
