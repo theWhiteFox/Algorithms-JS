@@ -88,3 +88,19 @@ function fizzBuzz(num) {
 }
 
 fizzBuzz(20);
+
+
+/*
+* Dijkstra’s Algorithm
+*/
+
+const graph = {
+  start: { },
+  A: { },
+  B: { },
+  C: { },
+  D: { },
+  finish: { }
+};
+
+
