@@ -97,7 +97,7 @@ fizzBuzz(20);
 const graph = {
   start: { },
   A: { },
-  B: { },
+  B: { D: 8, D: 7},
   C: { D: 6, finish: 3},
   D: { finish: 1 },
   finish: { }
