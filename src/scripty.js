@@ -99,8 +99,8 @@ const graph = {
   A: { },
   B: { },
   C: { },
-  D: { },
-  finish: { finish: 1}
+  D: { finish: 1 },
+  finish: { }
 };
 
 
