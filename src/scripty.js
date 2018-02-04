@@ -114,4 +114,6 @@ const parents = {
   B: 'start',
   finish: null
 };
+
+const processed = ['start', 'A', 'B'];
   
