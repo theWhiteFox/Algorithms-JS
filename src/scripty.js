@@ -103,4 +103,15 @@ const graph = {
   finish: { }
 };
 
+const costs = {
+  A: 5,
+  B: 2,
+  finish: Infinity
+};
 
+const parents = {
+  A: 'start',
+  B: 'start',
+  finish: null
+};
+  
