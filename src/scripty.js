@@ -144,7 +144,7 @@ const lowestCostNode = (costs, processed) => {
     
 // get the cost of the current node
 let node = lowestCostNode(costs, processed);
-// get the children of the current not
+// get all the children of the current
 while(node) {
   let cost = costs[node];
   
