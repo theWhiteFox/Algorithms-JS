@@ -118,3 +118,30 @@ const parents = {
 const processed = ['start', 'A', 'B'];
 
 console.log(costs);
+
+let node = lowestCostNode(costs, processed);
+while(node) {
+  let cost = costs[node];
+  
+  let children = graph[node];
+  
+  for(let n in children) {
+    let newCost = cost + children[n];
+    if(!cost[n]) {
+      cost[n] = newCost;
+      parents[n] = node;
+    }
+    if(costs[n] > newCost) {
+      costs[n] = newCost;
+      parents[n] = node;
+    }
+  }
+  processed.push(node);
+  
+  node = lowestCostNode(node);
+  
+  node = lowestCostNode(costs, processed);
+}
+
+
+
