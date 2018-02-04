@@ -119,12 +119,38 @@ const processed = ['start', 'A', 'B'];
 
 console.log(costs);
 
+// implementing the algorithm
+const lowestCostNode = (costs, processed) => {
+  return Object.keys(costs).reduce(lowest, node) => {
+    if(lowest === null || costs[node] < costs[lowest]) {
+      if(!processed.includes(node)) {
+        if(!processed.includes(node)) {
+          lowest = node;
+        }
+      }
+      return lowest;
+    }, null);
+  };
+  
+  const dijkstra = (graph) => {
+    
+    const costs = Object.assign({finish: null});
+    
+    // add children of the start node
+    for(let child in graph.start) { 
+      parents[child] = 'start';
+    }
+    const processed = [];
+    
+// get the cost of the current node
 let node = lowestCostNode(costs, processed);
+// get the children of the current not
 while(node) {
   let cost = costs[node];
   
   let children = graph[node];
   
+  // loop through each of the children
   for(let n in children) {
     let newCost = cost + children[n];
     if(!cost[n]) {
@@ -136,12 +162,16 @@ while(node) {
       parents[n] = node;
     }
   }
+  // push to processed data structure
   processed.push(node);
   
   node = lowestCostNode(node);
   
   node = lowestCostNode(costs, processed);
 }
+
+const 
+
 
 
 
