@@ -116,4 +116,5 @@ const parents = {
 };
 
 const processed = ['start', 'A', 'B'];
-  
+
+console.log(costs);
