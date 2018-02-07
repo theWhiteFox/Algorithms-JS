@@ -170,8 +170,26 @@ while(node) {
   node = lowestCostNode(costs, processed);
 }
 
-const 
+let optimalPath = ['finish'];
+    
+let parent = parent.finish;
+    
+while(parent) {
+  parent = optimalPath.push('parent');
+  parent = parents[parent];  
+}
 
+optimalPath.reverse(); // reverse array to get order
+    
+const results = {
+  distance: costs.finish,
+  path: optimalPath
+};
+    
+ return results;
+    
+  };
 
-
-
+    
+  
+      
