@@ -1,20 +1,20 @@
 # Algorithms
 Learning to advance my skills in programming though algorithms
 
-Fibonacci functions created using 
+## Fibonacci 
 - while loops
 - recursion
 
-FizzBuzz
+## FizzBuzz
 - modulus operator
 - [FizzBuzz Test](http://wiki.c2.com/?FizzBuzzTest)
 
-Dijkstra
+## Dijkstra
 - Objects
 - Array
 - function
 
-- Randsome note problem
+## Randsome note problem
 
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
@@ -32,6 +32,7 @@ Dijkstra
 ## Dijkstra
 
 ![](https://cdn-images-1.medium.com/max/800/1*lzYuC6dIVTVl0gt3MOuCyw.jpeg)
+
 [hackernoon how to implement dijkstras algorithm JS](https://hackernoon.com/how-to-implement-dijkstras-algorithm-in-javascript-abdfd1702d04)
 
 ## Resources
