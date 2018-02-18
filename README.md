@@ -15,6 +15,7 @@ Learning to advance my skills in programming though algorithms
 - function
 
 ## Randsome note problem
+- Big O notation
 
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
@@ -34,6 +35,9 @@ Learning to advance my skills in programming though algorithms
 ![](https://cdn-images-1.medium.com/max/800/1*lzYuC6dIVTVl0gt3MOuCyw.jpeg)
 
 [hackernoon how to implement dijkstras algorithm JS](https://hackernoon.com/how-to-implement-dijkstras-algorithm-in-javascript-abdfd1702d04)
+
+## Randsome note problem
+![](https://image.slidesharecdn.com/part2analysistools-140828232249-phpapp01/95/data-structures-part2-analysis-tools-22-638.jpg?cb=1409268230)
 
 ## Resources
 
