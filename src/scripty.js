@@ -218,3 +218,19 @@ function logAll(array) {
 logAll([1, 2, 3, 4, 5]);
 logAll([1, 2, 3, 4, 5, 6]);
 logAll([1, 2, 3, 4, 5, 6, 7]);
+
+
+// exponential runtime
+// big O Notation: "0 (n^2)"
+console.log("exponential runtime")
+function addAndLog(array) {
+  for(var i = 0; i < array.length; i++) {
+    for(var j = 0; j < array.length; j++) {
+      console.log(array[i] + array[j]);
+    }
+  }
+}
+
+addAndLog(['A', 'B', 'C']); // 9 pairs logged out
+addAndLog(['A', 'B', 'C', 'D']); // 9 pairs logged out
+addAndLog(['A', 'B', 'C', 'D', 'E']); // 9 pairs logged out
