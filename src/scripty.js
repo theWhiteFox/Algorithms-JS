@@ -232,5 +232,5 @@ function addAndLog(array) {
 }
 
 addAndLog(['A', 'B', 'C']); // 9 pairs logged out
-addAndLog(['A', 'B', 'C', 'D']); // 9 pairs logged out
-addAndLog(['A', 'B', 'C', 'D', 'E']); // 9 pairs logged out
+addAndLog(['A', 'B', 'C', 'D']); // 16 pairs logged out
+addAndLog(['A', 'B', 'C', 'D', 'E']); // 25 pairs logged out
