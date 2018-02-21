@@ -234,3 +234,52 @@ function addAndLog(array) {
 addAndLog(['A', 'B', 'C']); // 9 pairs logged out
 addAndLog(['A', 'B', 'C', 'D']); // 16 pairs logged out
 addAndLog(['A', 'B', 'C', 'D', 'E']); // 25 pairs logged out
+
+// locarithmic runtime
+// big O Notation: 0 (log n)
+console.log(">>> big O Notation: 0 (log n)");
+function binarySearch(array, key) {
+  var minIndex = 0;
+  var maxIndex = array.length - 1;
+  var currentIndex;
+  var currentElement;
+
+  while(minIndex <= maxIndex) {
+    // instead of Math.floor use bitwise or
+    currentIndex = (minIndex + maxIndex) / 2 | 0;
+    currentElement = array[currentIndex];
+    console.log("* currentElement: " + currentElement);
+    if(currentElement < key) {
+      console.log("** key: " + key);
+      minIndex = currentIndex + 1;      
+    } else if (currentElement > key) {
+      console.log("*** key: " + key);
+      maxIndex = currentIndex -1;
+    } else {
+      return currentIndex;
+    }
+  }
+  return -1;
+}
+
+console.log(binarySearch(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'], 'D'));
+
+// harmless ransome note
+function harmlessRansomeNote(noteText, magazineText) {
+  var noteArr = noteText.split(' ');
+  var magazineArr = magazineText.split(' ');
+  var magazineObj = {};
+
+  magazineArr.forEach(word => {
+    // if the current word is not already present
+    if(!magazineObj[word]) {
+      // make it a property 
+      magazineObj[word] = 0;
+    }
+    // increment the current word by 1
+    magazineObj[word]++;
+  });
+  console.log(magazineObj);
+}
+harmlessRansomeNote('', 'this is all the magazine text in the magazine');
+
