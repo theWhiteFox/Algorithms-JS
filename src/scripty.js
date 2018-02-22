@@ -264,7 +264,9 @@ function binarySearch(array, key) {
 
 console.log(binarySearch(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'], 'D'));
 
+
 // harmless ransome note
+console.log("harmless ransome note");
 function harmlessRansomeNote(noteText, magazineText) {
   var noteArr = noteText.split(' ');
   var magazineArr = magazineText.split(' ');
@@ -279,7 +281,15 @@ function harmlessRansomeNote(noteText, magazineText) {
     // increment the current word by 1
     magazineObj[word]++;
   });
-  console.log(magazineObj);
+  
+  var noteIsPossible = true;
+  noteArr.forEach(word => {
+    if(magazineObj[word]) {
+      magazineObj[word]--;
+      if(magazineObj[word] < 0) noteIsPossible = false;
+    }
+    else noteIsPossible = false;
+  });
+ return noteIsPossible;
 }
-harmlessRansomeNote('', 'this is all the magazine text in the magazine');
-
+console.log(harmlessRansomeNote('this is all', 'this is all note the magazine text in the magazine'));
