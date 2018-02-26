@@ -17,6 +17,8 @@ Learning to advance my skills in programming though algorithms
 ## Randsome note problem
 - Big O notation
 
+## Palindrome
+
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
 
