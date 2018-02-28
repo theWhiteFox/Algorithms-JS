@@ -15,9 +15,13 @@ Learning to advance my skills in programming though algorithms
 - function
 
 ## Randsome note problem
-- Big O notation
+- Big O Notation
+- Hashtable as an object
 
 ## Palindrome
+- String & array manipulation
+- String and array methods 
+
 
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
@@ -40,6 +44,10 @@ Learning to advance my skills in programming though algorithms
 
 ## Randsome note problem
 ![](https://image.slidesharecdn.com/part2analysistools-140828232249-phpapp01/95/data-structures-part2-analysis-tools-22-638.jpg?cb=1409268230)
+[codeburst.io: objects hash tables](https://codeburst.io/objects-and-hash-tables-in-javascript-a472ad1940d9)
+
+## Palindrome
+![](https://discourse-user-assets.s3.amazonaws.com/original/2X/c/ca86619bb0ec05531dbb02be3c0b7b8383e67f01.jpg)
 
 ## Resources
 
