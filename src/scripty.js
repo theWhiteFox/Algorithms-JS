@@ -293,3 +293,20 @@ function harmlessRansomeNote(noteText, magazineText) {
  return noteIsPossible;
 }
 console.log(harmlessRansomeNote('this is all', 'this is all note the magazine text in the magazine'));
+
+// palindrome
+function isPalindrome(string) {
+  string = string.toLowerCase();
+  var charactersArr = string.split('');
+  var validCharacters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+  var lettersArr = [];
+  charactersArr.forEach(char => {
+    if(validCharacters.indexOf(char) > -1) lettersArr.push(char);
+  });
+
+  if(lettersArr.join('') === lettersArr.reverse().join('')) return true;
+  else return false;
+}
+
+console.log(isPalindrome("Atlanta"));
