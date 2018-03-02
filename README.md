@@ -22,6 +22,7 @@ Learning to advance my skills in programming though algorithms
 - String & array manipulation
 - String and array methods 
 
+## Caesar Cipher
 
 ## Fibonacci
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
