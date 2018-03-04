@@ -320,6 +320,7 @@ function checkPalindrome(str) {
     else {
       return true;
     }
- }
+  }
+}
       
   
