@@ -326,7 +326,7 @@ function checkPalindrome(str) {
 // caesar's cipher
 function caesarCipher(str, num) {
   num = num % 26;
-  var lowerCaseString = str.toLowerCAse();
+  var lowerCaseString = str.toLowerCase();
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
   var newString = '';
   
