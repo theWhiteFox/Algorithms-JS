@@ -338,7 +338,7 @@ function caesarCipher(str, num) {
     }
     var currentIndex = alphabet.indexOf(currentLetter);
     var newIndex = currentIndex + num;
-    if (newIndex > 25) newIndex = newInddex - 26; // loop back around
+    if (newIndex > 25) newIndex = newIndex - 26; // loop back around
     if (newIndex < 0) newIndex = 26 + newIndex;
     if(str[i] === str[i].toUpperCsse()) {
       newString += alphabet[newIndex].toUpperCase();
