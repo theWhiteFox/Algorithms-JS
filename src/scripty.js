@@ -347,3 +347,5 @@ function caesarCipher(str, num) {
   }
   return newString;
 }
+
+caesarCipher('Zoo Keeper', 2); // "Bqq Mggrgt"
