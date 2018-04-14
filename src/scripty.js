@@ -357,4 +357,15 @@ function reverseString(str) {
 
 console.log(reverseString('This is a test'));
 
+// second reverse string with for loop 
+function reverseString1(str1) {
+  let newString = '';
+  
+  for(var i = str1.length - 1; i =< 0) {
+  	newString += str1[i];
+  }
+  return newString;
+}
+
+reverseString1('This is a test');
 
