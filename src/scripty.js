@@ -359,13 +359,29 @@ console.log(reverseString('This is a test'));
 
 // second reverse string with for loop 
 function reverseString1(str1) {
-  let newString = '';
+  var newString = '';
   
-  for(var i = str1.length - 1; i >= 0; i++) {
+  for(var i = str1.length - 1; i >= 0; i--) {
   	newString += str1[i];
   }
   return newString;
 }
 
-reverseString1('This is a test');
+console.log(reverseString1('This is a test1'));
 
+function reversedString2(str2) {
+  var stringArr = str2.split(' ');
+  var reversedWordsArr = [];
+  
+  stringArr.forEach(word => {
+    var reverseString = '';
+    for(var i - word.length -1; i >= 0 i--) {
+      reversedWord += word[i];
+  }
+    reversedWordsArr.push(reversedWord);
+ });
+  
+  return reversedWordsArr.join(' ');
+}
+
+reversedWords('this is a string of words');
