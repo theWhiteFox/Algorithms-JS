@@ -349,3 +349,12 @@ function caesarCipher(str, num) {
 }
 
 caesarCipher('Zoo Keeper', 2); // "Bqq Mggrgt"
+
+// first reverse string  
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString('This is a test');
+
+
