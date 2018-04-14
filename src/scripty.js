@@ -369,19 +369,4 @@ function reverseString1(str1) {
 
 console.log(reverseString1('This is a test1'));
 
-function reversedString2(str2) {
-  var stringArr = str2.split(' ');
-  var reversedWordsArr = [];
-  
-  stringArr.forEach(word => {
-    var reverseString = '';
-    for(var i - word.length -1; i >= 0 i--) {
-      reversedWord += word[i];
-  }
-    reversedWordsArr.push(reversedWord);
- });
-  
-  return reversedWordsArr.join(' ');
-}
 
-reversedWords('this is a string of words');
