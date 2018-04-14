@@ -361,7 +361,7 @@ console.log(reverseString('This is a test'));
 function reverseString1(str1) {
   let newString = '';
   
-  for(var i = str1.length - 1; i =< 0) {
+  for(var i = str1.length - 1; i >= 0; i++) {
   	newString += str1[i];
   }
   return newString;
