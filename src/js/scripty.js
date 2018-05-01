@@ -1,8 +1,8 @@
-(function () {
+(function() {
   // in a wrapping function, so it only affects these funcs
   "use strict";
 
-  // Fibonacci 
+  // Fibonacci
   // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
   // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
   // Fn = Fn-1 + Fn-2
@@ -25,7 +25,9 @@
 
   // enter a number
   function fibonacci(num) {
-    var a = 1, b = 0, temp2;
+    var a = 1,
+      b = 0,
+      temp2;
 
     while (num > 0) {
       temp2 = a;
@@ -39,11 +41,14 @@
 
   // for loop
   function fibFor() {
-    var a = 0, b = 1, i = 1, result;
+    var a = 0,
+      b = 1,
+      i = 1,
+      result;
     result = b;
-    console.log(a + '\n' + result + '\n');
+    console.log(a + "\n" + result + "\n");
     for (i; i < 10; i++) {
-      console.log(result + '\n');
+      console.log(result + "\n");
       result = a + b;
       a = b;
       b = result;
@@ -52,13 +57,11 @@
 
   // recursive function starts at 0
   function fib(number) {
-
     if (number == 0) return 0;
 
     if (number == 1) return 1;
 
     return fib(number - 2) + fib(number - 1);
-
   }
 
   // shorter recursive function starts at 1
@@ -68,8 +71,7 @@
     return fibRecursive(n - 2) + fibRecursive(n - 1);
   }
 
-
-  // FizzBuzz 
+  // FizzBuzz
   // modulus operator
   console.log("modulus operator: 7 % 3 = " + 7 % 3);
 
@@ -107,8 +109,7 @@
   };
 
   // func that returns the min cost and path to reach finish
-  const dijkstra = (graph) => {
-
+  const dijkstra = graph => {
     // track lowest cost to reach each node
     const costs = Object.assign({ finish: Infinity }, graph.start);
 
@@ -117,7 +118,7 @@
 
     // add children of the start node
     for (let child in graph.start) {
-      parents[child] = 'start';
+      parents[child] = "start";
     }
 
     // track nodes that have already been processed
@@ -147,7 +148,7 @@
       node = lowestCostNode(costs, processed);
     }
 
-    let optimalPath = ['finish'];
+    let optimalPath = ["finish"];
     let parent = parents.finish;
 
     while (parent) {
@@ -185,7 +186,7 @@
   // length: 4
 
   // Harmless Ransome Note
-  // constant runtime 
+  // constant runtime
   // big O notation: "0 (1)"
   function log(array) {
     console.log("constant runtime \n");
@@ -195,7 +196,6 @@
 
   log([1, 2, 3, 4]);
   log([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-
 
   // linear runtime
   // Big O Notation: "0 (n)"
@@ -210,10 +210,9 @@
   logAll([1, 2, 3, 4, 5, 6]);
   logAll([1, 2, 3, 4, 5, 6, 7]);
 
-
   // exponential runtime
   // Big O Notation: "0 (n^2)"
-  console.log("exponential runtime")
+  console.log("exponential runtime");
   function addAndLog(array) {
     for (var i = 0; i < array.length; i++) {
       for (var j = 0; j < array.length; j++) {
@@ -222,9 +221,9 @@
     }
   }
 
-  addAndLog(['A', 'B', 'C']); // 9 pairs logged out
-  addAndLog(['A', 'B', 'C', 'D']); // 16 pairs logged out
-  addAndLog(['A', 'B', 'C', 'D', 'E']); // 25 pairs logged out
+  addAndLog(["A", "B", "C"]); // 9 pairs logged out
+  addAndLog(["A", "B", "C", "D"]); // 16 pairs logged out
+  addAndLog(["A", "B", "C", "D", "E"]); // 25 pairs logged out
 
   // locarithmic runtime
   // big O Notation: 0 (log n)
@@ -238,7 +237,7 @@
 
     while (minIndex <= maxIndex) {
       // instead of Math.floor use bitwise or
-      currentIndex = (minIndex + maxIndex) / 2 | 0;
+      currentIndex = ((minIndex + maxIndex) / 2) | 0;
       currentElement = array[currentIndex];
       console.log("* currentElement: " + currentElement);
       if (currentElement < key) {
@@ -253,19 +252,24 @@
     }
     return -1;
   }
-  console.log(binarySearch(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'], 'D'));
+  console.log(
+    binarySearch(
+      ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N"],
+      "D"
+    )
+  );
 
   // Harmless Ransome Note
   console.log("harmless ransome note");
   function harmlessRansomeNote(noteText, magazineText) {
-    var noteArr = noteText.split(' ');
-    var magazineArr = magazineText.split(' ');
+    var noteArr = noteText.split(" ");
+    var magazineArr = magazineText.split(" ");
     var magazineObj = {};
 
     magazineArr.forEach(word => {
       // if the current word is not already present
       if (!magazineObj[word]) {
-        // make it a property 
+        // make it a property
         magazineObj[word] = 0;
       }
       // increment the current word by 1
@@ -277,36 +281,40 @@
       if (magazineObj[word]) {
         magazineObj[word]--;
         if (magazineObj[word] < 0) noteIsPossible = false;
-      }
-      else noteIsPossible = false;
+      } else noteIsPossible = false;
     });
     return noteIsPossible;
   }
-  console.log(harmlessRansomeNote('this is all', 'this is all note the magazine text in the magazine'));
+  console.log(
+    harmlessRansomeNote(
+      "this is all",
+      "this is all note the magazine text in the magazine"
+    )
+  );
 
   // Palindrome
   function isPalindrome(string) {
     string = string.toLowerCase();
-    var charactersArr = string.split('');
-    var validCharacters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    var charactersArr = string.split("");
+    var validCharacters = "abcdefghijklmnopqrstuvwxyz".split("");
 
     var lettersArr = [];
     charactersArr.forEach(char => {
       if (validCharacters.indexOf(char) > -1) lettersArr.push(char);
     });
 
-    if (lettersArr.join('') === lettersArr.reverse().join('')) return true;
+    if (lettersArr.join("") === lettersArr.reverse().join("")) return true;
     else return false;
   }
   console.log(isPalindrome("Atlanta"));
 
   function checkPalindrome(str) {
-    var i, len = str.length;
+    var i,
+      len = str.length;
     for (i = 0; i < len / 2; i++) {
       if (str[i] !== str[len - 1 - i]) {
         return false;
-      }
-      else {
+      } else {
         return true;
       }
     }
@@ -316,12 +324,12 @@
   function caesarCipher(str, num) {
     num = num % 26;
     var lowerCaseString = str.toLowerCase();
-    var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-    var newString = '';
+    var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+    var newString = "";
 
     for (var i = 0; i < lowerCaseString.length; i++) {
       var currentLetter = lowerCaseString[i];
-      if (currentLetter === ' ') {
+      if (currentLetter === " ") {
         newString += currentLetter;
         continue;
       }
@@ -331,39 +339,49 @@
       if (newIndex < 0) newIndex = 26 + newIndex;
       if (str[i] === str[i].toUpperCase()) {
         newString += alphabet[newIndex].toUpperCase();
-      }
-      else newString += alphabet[newIndex];
+      } else newString += alphabet[newIndex];
     }
     return newString;
   }
 
-  caesarCipher('Zoo Keeper', 2); // "Bqq Mggrgt"
+  caesarCipher("Zoo Keeper", 2); // "Bqq Mggrgt"
 
-  // First Reverse String  
+  // First Reverse String
   function reverseString(str) {
-    return str.split('').reverse().join('');
+    return str
+      .split("")
+      .reverse()
+      .join("");
   }
-  console.log(reverseString('This is a test'));
+  console.log(reverseString("This is a test"));
 
-  // Second Reverse String with for loop 
+  // Second Reverse String with for loop
   function reverseString1(str1) {
-    var newString = '';
+    var newString = "";
 
     for (var i = str1.length - 1; i >= 0; i--) {
       newString += str1[i];
     }
     return newString;
   }
-  console.log(reverseString1('This is a test1'));
+  console.log(reverseString1("This is a test1"));
 
   // reverse array
-  function reverseArrInPlace(arr) {    
+  function reverseArrInPlace(arr) {
+    for (let i = 0; i < arr.length / 2; i++) {
+      // reverse array
+      let temp = arr[i];
+      arr[i] = arr[arr.length -1 - i];
+      arr[arr.length -1 - i] = temp;
+    }
     // return reversed arr
-    return arr.reverse();
+    return arr;
   }
 
-  const arr = ['teapot', 10, true, "Sheet"];
+  const arr = ["teapot", 10, true, "Sheet"];
 
-  console.log(reverseArrInPlace(arr));
-
-}()); // end IIFE
+  console.log(`Array ${arr}`);
+  console.log(`Reverse arr loop: ${reverseArrInPlace(arr)}`);
+  console.log(`Using the method: ` + arr.reverse());
+  
+})(); // end IIFE
