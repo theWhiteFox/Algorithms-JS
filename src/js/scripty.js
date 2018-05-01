@@ -356,4 +356,14 @@
   }
   console.log(reverseString1('This is a test1'));
 
+  // reverse array
+  function reverseArrInPlace(arr) {    
+    // return reversed arr
+    return arr.reverse();
+  }
+
+  const arr = ['teapot', 10, true, "Sheet"];
+
+  console.log(reverseArrInPlace(arr));
+
 }()); // end IIFE

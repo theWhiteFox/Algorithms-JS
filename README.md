@@ -34,6 +34,7 @@ Learning to advance my skills in programming though algorithms
 - Hashtable as an object
 
 ![](https://image.slidesharecdn.com/part2analysistools-140828232249-phpapp01/95/data-structures-part2-analysis-tools-22-638.jpg?cb=1409268230)
+
 [codeburst.io: objects hash tables](https://codeburst.io/objects-and-hash-tables-in-javascript-a472ad1940d9)
 
 ## 5. Palindrome
@@ -47,7 +48,7 @@ Learning to advance my skills in programming though algorithms
 
 [Substitution Cipher](https://medium.com/@TimSeverien/substitution-cipher-in-javascript-d530eb2d923d)
 
-## 7. Reverse a string
+## 7. Reverse a string / array
 
 [Medium Reverse a String](https://medium.com/sonyamoisset/reverse-a-string-in-javascript-a18027b8e91c)
 
@@ -60,3 +61,5 @@ Learning to advance my skills in programming though algorithms
 [about gists](https://help.github.com/articles/about-gists/)
 
 [repl.it steTheWhiteFox](https://repl.it/@steTheWhiteFox)
+
+[jshint](http://jshint.com/docs/)
