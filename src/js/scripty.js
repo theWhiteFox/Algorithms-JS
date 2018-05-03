@@ -260,7 +260,8 @@
   );
 
   // Harmless Ransome Note
-  console.log("harmless ransome note");
+  console.log("******* harmless ransome note");
+
   function harmlessRansomeNote(noteText, magazineText) {
     var noteArr = noteText.split(" ");
     var magazineArr = magazineText.split(" ");
@@ -446,4 +447,24 @@
     };
   }
   console.log(meanMedianMode([1, 2, 3, 4, 5, 4, 6, 1]));
+
+  // Two Sum
+  function twoSum(numArray, sum) {
+    // array to store the result of two numbers equal to sum
+    const pairs = [];
+    const hashTable = [];
+
+    for (let i = 0; i < numArray.length; i++) {
+      let currItem = numArray[i];
+      let counterPart = sum - currItem;
+      if (hashTable.indexOf(counterPart) !== -1) {
+        pairs.push([currItem, counterPart]);
+      } 
+      hashTable.push(currItem);
+    }
+    return pairs;
+  }
+
+  const numArray = [1, 6, 4, 5, 3, 3];
+  console.log(twoSum(numArray, 7));
 })(); // end IIFE
