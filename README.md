@@ -62,6 +62,10 @@ Learning to advance my skills in programming though algorithms
 
 ## 8. Mean Median Mode
 
+## 9. Binary Search
+
+![factorial](https://i.stack.imgur.com/B0giY.png)
+
 ## Resources
 
 [rawgit](https://rawgit.com/)

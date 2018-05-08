@@ -459,7 +459,7 @@
       let counterPart = sum - currItem;
       if (hashTable.indexOf(counterPart) !== -1) {
         pairs.push([currItem, counterPart]);
-      } 
+      }
       hashTable.push(currItem);
     }
     return pairs;
@@ -467,4 +467,40 @@
 
   const numArray = [1, 6, 4, 5, 3, 3];
   console.log(twoSum(numArray, 7));
+
+  // Binary Search
+  // search for a given value(key) inside of a list (numArray)
+  // runs in O (log n) run time - very
+  // using a recursive function
+
+  // recursive function
+  function factorial(num) {
+    // base case
+    if (num === 1) {
+      return num;
+    } else {
+      return num * factorial(num - 1);
+    }
+  }
+
+  // Binary Search function
+  function binarySearchRecursive(numArray, key) {
+    let midIndex = Math.floor(numArray.length / 2);
+    let midElem = numArray[midIndex];
+
+    if (midElem === key) {
+      return true;
+    } else if (midElem < key && numArray > 1) {
+      return binarySearchRecursive(
+        numArray.splice(midIndex, numArray.length),
+        key
+      );
+    } else if (midElem > key && numArray > 1) {
+      return binarySearchRecursive(numArray.splice(0, midIndex), key);
+    } else {
+      return false;
+    }
+  }
+
+  console.log(`Binary Search Result: ${binarySearchRecursive([5, 7, 12, 16, 36, 42, 65, 71], 56)}`);
 })(); // end IIFE
