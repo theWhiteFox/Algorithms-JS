@@ -5,7 +5,8 @@ Learning to advance my skills in programming though algorithms
 ## 1. Fibonacci
 
 - while loops
-- recursion
+- recursion O(2^n)
+- Memoization
 
 ![Fibonacci Spiral](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FibonacciSpiral.svg/220px-FibonacciSpiral.svg.png)
 
@@ -13,7 +14,15 @@ Learning to advance my skills in programming though algorithms
 
 [Fibonacci sequence algorithm in Javascript](https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e)
 
-[c fibonacci-problem-using-while-loop](https://cboard.cprogramming.com/c-programming/57359-fibonacci-problem-using-while-loop.html)
+[c fibonacci problem using while loop](https://cboard.cprogramming.com/c-programming/57359-fibonacci-problem-using-while-loop.html)
+
+[Memoization caching of return values](https://perlmaven.com/memoization-caching-of-return-values)
+
+[wikipedia](https://en.wikipedia.org/wiki/Memoization)
+
+[StackOverflow Big O fibonacci implementations Java](https://stackoverflow.com/questions/13440020/big-o-for-various-fibonacci-implementations)
+
+[CS calculate big o](https://justin.abrah.ms/computer-science/how-to-calculate-big-o.html)
 
 ## 2. FizzBuzz
 

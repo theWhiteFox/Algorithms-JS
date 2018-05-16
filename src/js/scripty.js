@@ -71,6 +71,18 @@
     return fibRecursive(n - 2) + fibRecursive(n - 1);
   }
 
+// 1, 1, 2, 3, 5, 8
+// O(2^n)
+function fib(position) {
+  if(position < 3) {
+    return 1;
+  } else { 
+    return fib( position - 1) + fib(position - 2);
+  }
+}
+
+console.log("Fibonacci (2^n) = " + fib(6));
+
   // FizzBuzz
   // modulus operator
   console.log("modulus operator: 7 % 3 = " + 7 % 3);
