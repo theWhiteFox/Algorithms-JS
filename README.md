@@ -84,3 +84,5 @@ Learning to advance my skills in programming though algorithms
 [repl.it steTheWhiteFox](https://repl.it/@steTheWhiteFox)
 
 [jshint](http://jshint.com/docs/)
+
+[developer mozilla map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)

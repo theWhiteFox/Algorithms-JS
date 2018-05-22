@@ -71,17 +71,17 @@
     return fibRecursive(n - 2) + fibRecursive(n - 1);
   }
 
-// 1, 1, 2, 3, 5, 8
-// O(2^n)
-function fib(position) {
-  if(position < 3) {
-    return 1;
-  } else { 
-    return fib( position - 1) + fib(position - 2);
+  // 1, 1, 2, 3, 5, 8
+  // O(2^n)
+  function fib(position) {
+    if (position < 3) {
+      return 1;
+    } else {
+      return fib(position - 1) + fib(position - 2);
+    }
   }
-}
 
-console.log("Fibonacci (2^n) = " + fib(6));
+  console.log("Fibonacci (2^n) = " + fib(6));
 
   // FizzBuzz
   // modulus operator
@@ -480,6 +480,61 @@ console.log("Fibonacci (2^n) = " + fib(6));
   const numArray = [1, 6, 4, 5, 3, 3];
   console.log(twoSum(numArray, 7));
 
+  // Two Sum return indices O(n)
+  var twoSumIndices = function(nums, target) {  
+    const hashMap = new Map();
+    let len = nums.length;
+
+    for (let i = 0; i < len; i++) {
+      let currItem = nums[i];
+      let counterpart = target - currItem;
+
+      if (hashMap.has(counterpart)) {
+        return [hashMap.get(counterpart), i];
+      }
+      hashMap.set(nums[i], i);
+    }
+    return "Error 2 numbers for: " + target;
+  };
+
+  const numArr = [2, 7, 11, 15];
+  console.log(`*** ===> twoSum: ${twoSumIndices(numArr, 18)}`);
+
+  // Two Sum return indices O(n^2)
+  const twoSumBrute = (numArr, target) => {
+    let len = numArr.length;
+    for (let i = 0; i < len; i++) {
+      for (let j = i + 1; j < len; j++) {
+        if (numArr[j] == target - numArr[i]) {
+          return [i, j];
+        }
+      }
+    }
+    return "Error 2 numbers for: " + target;
+  };
+
+  const numArrB = [2, 7, 11, 15];
+  console.log(`+++ ===> twoSumBrute: ${twoSumBrute(numArrB, 9)}`);
+
+  // Two Sum return indices O(1)
+  const twoSumTwoPassHash = (numArr, target) => {
+    const map = new Map();
+    let len = numArr.length;
+    for (let i = 0; i < len; i++) {
+      map.set(numArr[i], i);
+    }
+    for (let i = 0; i < len; i++) {
+      let complement = target - numArr[i];
+      if (map.has(complement) && map.get(complement) != i) {
+        return [i, map.get(complement)];
+      }
+    }
+    return "Error 2 numbers for: " + target;
+  };
+
+  const numArrPH = [2, 7, 11, 15];
+  console.log(`+++ ===> twoSumTwoPassHash: ${twoSumTwoPassHash(numArrPH, 9)}`);
+
   // Binary Search
   // search for a given value(key) inside of a list (numArray)
   // runs in O (log n) run time - very
@@ -514,5 +569,10 @@ console.log("Fibonacci (2^n) = " + fib(6));
     }
   }
 
-  console.log(`Binary Search Result: ${binarySearchRecursive([5, 7, 12, 16, 36, 42, 65, 71], 56)}`);
+  console.log(
+    `Binary Search Result: ${binarySearchRecursive(
+      [5, 7, 12, 16, 36, 42, 65, 71],
+      56
+    )}`
+  );
 })(); // end IIFE
