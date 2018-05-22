@@ -71,7 +71,11 @@ Learning to advance my skills in programming though algorithms
 
 ## 8. Mean Median Mode
 
-## 9. Binary Search
+## 9. Two Sum
+
+[leetcode two-sum description](https://leetcode.com/problems/two-sum/description/)
+
+## 10. Binary Search
 
 ![factorial](https://i.stack.imgur.com/B0giY.png)
 
