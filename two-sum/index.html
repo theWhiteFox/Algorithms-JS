@@ -25,8 +25,8 @@
 
 <body>
     <div class="container">
-        <h1>Two Sum Algorithm</h1>
-        <p>The two sum algorithm will be written in JavaScript(JS) that runs in O(n) time. The algorithm will be a JS function that take two parameters, a numbers array
+        <h1>Two Sum Algorithm JavaScript(JS)</h1>
+        <p>The two sum algorithm will be written in <a href="https://hacks.mozilla.org/category/es6-in-depth/">JS(ES6)</a> that runs in O(n) time. The algorithm will be a JS function that take two parameters, a numbers array
             <span class="code-outside">arr</span> a sum value
             <span class="code-outside">sum</span>.  This function returns a of pair indices from
             <span class="code-outside">arr</span> that add up to the
@@ -40,37 +40,48 @@
             <span class="code-outside">arr</span> and
             <span class="code-outside">sum</span> passed in will be returned "Error no two numbers in array for sum: 159"</p>
         <div class="code regular">
-            <b>// Two Sum return indices O(n^2)</b>
-            const twoSumBrute = (arr, target) => {
+            <b>// Two Sum return indices <span style='font-style:italic;padding-right:1px;'>O</span>(<i>n</i><sup style='padding:0 1px;'>2</sup>)</b>
+            const twoSumBrute = (arr, sum) => {
                     let len = arr.length;
                     for (let i = 0; i < len; i++) {
                     for (let j = i + 1; j < len; j++) {
-                        if (arr[j] === target - arr[i]) {
+                        if (arr[j] === sum - arr[i]) {
                         return [i, j];
                         }
                     }
                 }
-                return `Error no two numbers in ${arr} for sum: ` + target;
+                return `Error no two numbers in ${arr} for sum: ` + sum;
             };
                 
             const arr = [3, 7, 11, 15];
         </div>
 
+        <p>This second attempt is using a hashtable with two for loops O(1). To test go to your browser console and call the
+            function by copy / paste
+            <span class="code-outside"> twoSumTwoPassHash(arr, 10);</span>
+            The
+            <span class="code-outside">arr</span> passed in has already been defined within the JS code. You could also enter an array and a sum of
+            your own like this example
+            <span class="code-outside"> twoSumTwoPassHash([9, 33, 50, 41], 59);</span> If a sum is not in the array an error will the
+            <span class="code-outside">arr</span> and
+            <span class="code-outside">sum</span> passed in will be returned "Error no two numbers in array for sum: 159"</p>
+
         <div class="code regular">
-            <b>// Two Sum return indices O(n^2)</b>
-            const twoSumBrute = (arr, target) => {
-                    let len = arr.length;
-                    for (let i = 0; i < len; i++) {
-                    for (let j = i + 1; j < len; j++) {
-                        if (arr[j] === target - arr[i]) {
-                        return [i, j];
-                        }
-                    }
+            <b>// Two Sum return indices O(1)</b>            
+            const twoSumTwoPassHash = (arr, sum) => {
+                const map = new Map();
+                let len = arr.length;
+                for (let i = 0; i < len; i++) {
+                  map.set(arr[i], i);
                 }
-                return `Error no two numbers in ${arr} for sum: ` + target;
-            };
-                
-            const arr = [3, 7, 11, 15];
+                for (let i = 0; i < len; i++) {
+                  let complement = sum - arr[i];
+                  if (map.has(complement) && map.get(complement) != i) {
+                    return [i, map.get(complement)];
+                  }
+                }
+                return "Error 2 numbers for: " + sum;
+              };
         </div>
 
 </body>
