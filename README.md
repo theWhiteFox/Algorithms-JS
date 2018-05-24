@@ -73,6 +73,8 @@ Learning to advance my skills in programming though algorithms
 
 ## 9. Two Sum
 
+[theWhiteFox GitHub two-sum/](http://thewhitefox.github.io/algorithms-in-js/two-sum/)
+
 [leetcode two-sum description](https://leetcode.com/problems/two-sum/description/)
 
 ## 10. Binary Search

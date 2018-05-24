@@ -89,6 +89,7 @@ h1 {
 background-color: #0a0f18;
 color: white;
 font: 14px/1.5em "Fira Code";
+padding:.1em .2em;
 }
 .light {
   font-weight: 300;
