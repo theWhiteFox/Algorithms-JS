@@ -28,3 +28,20 @@ const twoSumTwoPassHash = (arr, sum) => {
   }
   return `Error no two numbers in ${arr} for sum: ` + sum;
 };
+
+const twoSumHashTable = (arr, sum) => {
+  const hashMap = new Map();
+  let i = 0;
+  let len = arr.length;
+
+  for (i = 0; i < len; i++) {
+    let currItem = arr[i];
+    let counterpart = sum - currItem;   
+
+    if (hashMap.has(counterpart)) {      
+      return [hashMap.get(counterpart), i];
+    }
+    hashMap.set(arr[i], i);
+  }
+  return `Error no two numbers in ${arr} for sum: ` + sum;
+};
