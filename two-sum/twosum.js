@@ -4,7 +4,9 @@ const arr = [3, 7, 11, 15];
 const twoSumBrute = (arr, sum) => {
   let len = arr.length;
   for (let i = 0; i < len; i++) {
+    console.log(`i: ${arr[i]}`);
     for (let j = i + 1; j < len; j++) {
+      console.log(`j: ${arr[j]}`);
       if (arr[j] === sum - arr[i]) {
         return [i, j];
       }
@@ -30,18 +32,36 @@ const twoSumTwoPassHash = (arr, sum) => {
 };
 
 const twoSumHashTable = (arr, sum) => {
-  const hashMap = new Map();
+  const hashTable = new Map();
   let i = 0;
   let len = arr.length;
 
   for (i = 0; i < len; i++) {
     let currItem = arr[i];
-    let counterpart = sum - currItem;   
+    let counterpart = sum - currItem;
 
-    if (hashMap.has(counterpart)) {      
-      return [hashMap.get(counterpart), i];
+    if (hashTable.has(counterpart)) {
+      return [hashTable.get(counterpart), i];
     }
-    hashMap.set(arr[i], i);
+    hashTable.set(arr[i], i);
   }
   return `Error no two numbers in ${arr} for sum: ` + sum;
+};
+
+const twoSumArrPair = (arr, sum) => {
+  const pairsArr = [];
+  const hashTable = new Map();
+  let i = 0;
+  let len = arr.length;
+
+  for (i = 0; i < len; i++) {
+    let currItem = arr[i];
+    let counterpart = sum - currItem;
+
+    if (hashTable.has(counterpart)) {
+      pairsArr.push([currItem, counterpart]);
+    }
+    hashTable.set(currItem);
+  }
+  return pairsArr;
 };

@@ -34,7 +34,7 @@
             function by copy / paste
             <span class="code-outside"> twoSumBrute(arr, 10);</span>
             The
-            <span class="code-outside">arr</span> passed in has already been defined within the JS code. You could also enter an array and a sum of
+            <span class="code-outside">arr</span> passed in has already been defined within the JS code as <span class="code-outside">const arr = [3, 7, 11, 15];</span>. You could also enter an array and a sum of
             your own like this example
             <span class="code-outside"> twoSumBrute([9, 33, 50, 41], 59);</span> If a sum is not in the array an error will the
             <span class="code-outside">arr</span> and
@@ -51,9 +51,7 @@
                     }
                 }
                 return `Error no two numbers in ${arr} for sum: ` + sum;
-            };
-                
-            const arr = [3, 7, 11, 15];
+            }; 
         </div>
 
         <p>This second attempt is using a hashtable with two for loops O(1). To test go to your browser console and call the
@@ -83,7 +81,7 @@
               };
         </div>
 
-        <p>This third attempt is using a hashtable with one for loop O(n). To test go to your browser console and call the
+        <p>This third attempt is using a hashtable with one for loop, O(n) time complexity. To test go to your browser console and call the
             function by copy / paste the following <span class="code-outside">twoSumHashTable(arr, 10);</span>
             The
             <span class="code-outside">arr</span> passed in has already been defined within the JS code. You could also enter an array and a sum of
@@ -95,7 +93,7 @@
         <div class="code regular">
             <b>// Two Sum return indices O(1)</b>            
             const twoSumHashTable = (arr, sum) => {
-                const hashMap = new Map();
+                const hashTable = new Map();
                 let i = 0;
                 let len = arr.length;
               
@@ -103,12 +101,44 @@
                   let currItem = arr[i];
                   let counterpart = sum - currItem;   
               
-                  if (hashMap.has(counterpart)) {      
-                    return [hashMap.get(counterpart), i];
+                  if (hashTable.has(counterpart)) {      
+                    return [hashTable.get(counterpart), i];
                   }
-                  hashMap.set(arr[i], i);
+                  hashTable.set(arr[i], i);
                 }
                 return `Error no two numbers in ${arr} for sum: ` + sum;
+              };
+        </div>
+
+        <p>This is another version of the two sum algorithm in JS. This function returns every pair of numbers from
+            <span class="code-outside">arr</span> that add up to the
+            <span class="code-outside">sum</span> parameter. Using a hashtable with one for loop it will be O(n) time complexity. To test go to your browser console and call the
+            function by copy / paste the following <span class="code-outside">twoSumArrPair([1, 6, 4, 5, 3, 3], 7);</span>
+            The
+            <span class="code-outside">arr</span> passed in has already been defined within the JS code. You could also enter an array and a sum of
+            your own like this example
+            <span class="code-outside"> twoSumArrPair([1, 6, 4, 5, 3, 3], 7);</span> If a sum is not in the array an error will the
+            <span class="code-outside">arr</span> and
+            <span class="code-outside">sum</span> passed in will be returned "Error no two numbers in array for sum: 159"</p>
+
+        <div class="code regular">
+            <b>// Two Sum return pairs  O(n)</b>            
+            const twoSumArrPair = (arr, sum) => {
+                const pairsArr = [];
+                const hashTable = new Map();
+                let i = 0;
+                let len = arr.length;
+              
+                for (i = 0; i < len; i++) {
+                  let currItem = arr[i];
+                  let counterpart = sum - currItem;
+              
+                  if (hashTable.has(counterpart)) {
+                    pairsArr.push([currItem, counterpart]);
+                  }
+                  hashTable.set(currItem);
+                }
+                return pairsArr;
               };
         </div>
 
